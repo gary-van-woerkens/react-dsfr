@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.1.0...v1.1.1) (2021-10-08)
+
+
+### Bug Fixes
+
+* Allow button icon right positioning ([90fe9fc](https://github.com/gary-van-woerkens/react-dsfr/commit/90fe9fc67ebe84e4ef8f54e8ec47b68da4e06959))
+
 # [1.1.0](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.0.0...v1.1.0) (2021-10-08)
 
 
