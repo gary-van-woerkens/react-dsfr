@@ -28,6 +28,12 @@ IconPrimary.args = { ...Primary.args, iconCls: "ri-settings-3-line" };
 export const IconSecondary = Template.bind({});
 IconSecondary.args = { ...IconPrimary.args, primary: false };
 
+export const IconRightPrimary = Template.bind({});
+IconRightPrimary.args = { ...IconPrimary.args, iconPosition: "right" };
+
+export const IconRightSecondary = Template.bind({});
+IconRightSecondary.args = { ...IconRightPrimary.args, primary: false };
+
 export const IconOnlyPrimary = Template.bind({});
 IconOnlyPrimary.args = { size: "large", iconCls: "ri-settings-3-line" };
 

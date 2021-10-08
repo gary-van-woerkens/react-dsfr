@@ -3,10 +3,11 @@ import React from "react";
 import "./button.css";
 
 export interface ButtonProps  {
-  label: string;
-  iconCls: string;
+  label?: string;
+  iconCls?: string;
   primary?: boolean;
   disabled?: boolean;
+  iconPosition: "left" | "right";
   size?: "small" | "medium" | "large";
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -16,10 +17,11 @@ export interface ButtonProps  {
 const Button = ({
   label,
   onClick,
-  iconCls = "",
+  iconCls,
   primary = true,
   size = "medium",
   disabled = false,
+  iconPosition = "left",
 }: ButtonProps) => {
   const mode = primary
     ? "storybook-button--primary"
@@ -37,8 +39,9 @@ const Button = ({
   ]
 
   if (iconCls) buttonClasses.push(iconCls)
-  if (!label) buttonClasses.push("storybook-button--nolabel")
+  if (!label) buttonClasses.push("storybook-button--no-label")
   if (disabled) buttonClasses.push("storybook-button--disabled")
+  if (iconPosition === "right") buttonClasses.push("storybook-button--icon-right")
 
   return (
     <button

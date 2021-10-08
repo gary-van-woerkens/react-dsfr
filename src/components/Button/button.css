@@ -21,6 +21,7 @@
   display: flex;
   line-height: 1;
   cursor: pointer;
+  position: relative;
   align-items: center;
   justify-content: center;
 }
@@ -84,7 +85,7 @@
 .storybook-button-label {
   line-height: 1;
   position: relative;
-  margin-left: 0.25rem;
+  margin-left: 0.50rem;
   font-family: "Marianne Regular";
 }
 
@@ -124,12 +125,19 @@
   color: #919191;
 }
 
-.storybook-button--nolabel {
+.storybook-button--no-label {
   padding: 8px;
 }
 
-.storybook-button--nolabel .storybook-button-label {
+.storybook-button--no-label .storybook-button-label {
   margin-left: 0;
 }
 
+.storybook-button--icon-right {
+  flex-direction: row-reverse;
+}
 
+.storybook-button--icon-right .storybook-button-label {
+  margin-left: 0;
+  margin-right: 0.50rem;
+}
