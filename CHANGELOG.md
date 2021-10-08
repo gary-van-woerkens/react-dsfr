@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.0.0...v1.1.0) (2021-10-08)
+
+
+### Features
+
+* Button light mode ([d8d568a](https://github.com/gary-van-woerkens/react-dsfr/commit/d8d568a42f077cb34655fbd0b3fab968f28e9d7c))
+
 # 1.0.0 (2021-10-08)
 
 
