@@ -1,11 +1,12 @@
 import React from "react";
-import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
+import { Meta } from "@storybook/react/types-6-0";
+
 import Button, { ButtonProps } from "./Button";
 
 export default {
-  title: "Components/Button",
   component: Button,
+  title: "Components/Button",
   argTypes: {
     backgroundColor: { control: 'color' },
   },
@@ -16,7 +17,19 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 // Reuse that template for creating different stories
 export const Primary = Template.bind({});
-Primary.args = { label: "Label bouton", size: "large" };
+Primary.args = { label: "Button label", size: "large" };
 
 export const Secondary = Template.bind({});
-Secondary.args = { ...Primary.args, primary: false, label: "Label bouton" };
+Secondary.args = { ...Primary.args, primary: false };
+
+export const IconPrimary = Template.bind({});
+IconPrimary.args = { ...Primary.args, iconCls: "ri-settings-3-line" };
+
+export const IconSecondary = Template.bind({});
+IconSecondary.args = { ...IconPrimary.args, primary: false };
+
+export const IconOnlyPrimary = Template.bind({});
+IconOnlyPrimary.args = { size: "large", iconCls: "ri-settings-3-line" };
+
+export const IconOnlySecondary = Template.bind({});
+IconOnlySecondary.args = { ...IconOnlyPrimary.args, primary: false };

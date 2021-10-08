@@ -123,3 +123,13 @@
 .storybook-button--disabled > .storybook-button-label {
   color: #919191;
 }
+
+.storybook-button--nolabel {
+  padding: 8px;
+}
+
+.storybook-button--nolabel .storybook-button-label {
+  margin-left: 0;
+}
+
+
