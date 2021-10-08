@@ -1,0 +1,45 @@
+{
+  "name": "react-dsfr",
+  "version": "1.0.0",
+  "repository": "git@github.com:gary-van-woerkens/react-dsfr.git",
+  "author": "SocialGouv",
+  "license": "MIT",
+  "private": false,
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-essentials": "^6.3.10",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/react": "^6.3.10",
+    "@types/react": "^17.0.27",
+    "babel-loader": "^8.2.2",
+    "postcss": "^8.3.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.58.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "dependencies": {
+    "remixicon": "^2.5.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build-storybook": "build-storybook -s public",
+    "storybook": "start-storybook -s public -p 6006"
+  }
+}
