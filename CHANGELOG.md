@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.1...v1.2.2) (2021-10-09)
+
+
+### Bug Fixes
+
+* Set props as optional ([00b861f](https://github.com/gary-van-woerkens/react-dsfr/commit/00b861f10e7d21833adc18170cf0cd8864308769))
+
 ## [1.2.1](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.0...v1.2.1) (2021-10-09)
 
 
