@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.2...v1.2.3) (2021-10-09)
+
+
+### Bug Fixes
+
+* Export Header component ([b30b8f2](https://github.com/gary-van-woerkens/react-dsfr/commit/b30b8f2ce2f20aecba88be230b4b1d8a7c8035c9))
+
 ## [1.2.2](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.1...v1.2.2) (2021-10-09)
 
 
