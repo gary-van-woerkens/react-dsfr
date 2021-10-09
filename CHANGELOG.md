@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.1.1...v1.2.0) (2021-10-09)
+
+
+### Features
+
+* Add Header component ([7946449](https://github.com/gary-van-woerkens/react-dsfr/commit/79464493e8267d3c6422dd3002e7d3c4e9149519))
+
 ## [1.1.1](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.1.0...v1.1.1) (2021-10-08)
 
 
