@@ -1,18 +1,16 @@
-import React from "react";
+import React from "react"
 
-import "./button.css";
+import "./button.css"
 
-export interface ButtonProps  {
-  label?: string;
-  iconCls?: string;
-  primary?: boolean;
-  disabled?: boolean;
-  iconPosition: "left" | "right";
-  size?: "small" | "medium" | "large";
-  onClick?: (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => void;
-};
+export interface ButtonProps {
+  label?: string
+  iconCls?: string
+  primary?: boolean
+  disabled?: boolean
+  iconPosition: "left" | "right"
+  size?: "small" | "medium" | "large"
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+}
 
 const Button = ({
   label,
@@ -22,26 +20,23 @@ const Button = ({
   size = "medium",
   disabled = false,
   iconPosition = "left",
-}: ButtonProps) => {
+}: ButtonProps): JSX.Element => {
   const mode = primary
     ? "storybook-button--primary"
-    : "storybook-button--secondary";
+    : "storybook-button--secondary"
 
-  const buttonClasses = [
-    "storybook-button",
-    `storybook-button--${size}`,
-    mode
-  ]
+  const buttonClasses = ["storybook-button", `storybook-button--${size}`, mode]
 
   const labelClasses = [
     "storybook-button-label",
-    `storybook-button-label--${size}`
+    `storybook-button-label--${size}`,
   ]
 
   if (iconCls) buttonClasses.push(iconCls)
   if (!label) buttonClasses.push("storybook-button--no-label")
   if (disabled) buttonClasses.push("storybook-button--disabled")
-  if (iconPosition === "right") buttonClasses.push("storybook-button--icon-right")
+  if (iconPosition === "right")
+    buttonClasses.push("storybook-button--icon-right")
 
   return (
     <button
@@ -52,7 +47,7 @@ const Button = ({
     >
       <span className={labelClasses.join(" ")}>{label}</span>
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button
