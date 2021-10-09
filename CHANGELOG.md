@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.0...v1.2.1) (2021-10-09)
+
+
+### Bug Fixes
+
+* Add Marianne bold fonts ([a21868a](https://github.com/gary-van-woerkens/react-dsfr/commit/a21868a619c333475a09537f08b6d182f89b2ff1))
+
 # [1.2.0](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.1.1...v1.2.0) (2021-10-09)
 
 
