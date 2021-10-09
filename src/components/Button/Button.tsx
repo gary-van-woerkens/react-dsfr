@@ -7,7 +7,7 @@ export interface ButtonProps {
   iconCls?: string
   primary?: boolean
   disabled?: boolean
-  iconPosition: "left" | "right"
+  iconPosition?: "left" | "right"
   size?: "small" | "medium" | "large"
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }

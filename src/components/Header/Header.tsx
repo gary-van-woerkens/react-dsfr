@@ -6,7 +6,7 @@ export interface HeaderProps {
   service: string
   entity?: string
   baseline?: string
-  children: JSX.Element
+  children?: JSX.Element
 }
 
 const Header = ({
