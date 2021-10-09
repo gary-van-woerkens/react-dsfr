@@ -14,5 +14,20 @@ export default {
 
 const Template: Story<HeaderProps> = (args) => <Header {...args} />
 
-export const BrandOnly = Template.bind({})
-BrandOnly.args = { title: "My Application" }
+export const Service = Template.bind({})
+Service.args = { service: "My Application" }
+
+export const Baseline = Template.bind({})
+Baseline.args = { ...Service.args, baseline: "The design system demo" }
+
+const TemplateChildren: Story<HeaderProps> = (args) => (
+  <Header {...args}>
+    <>
+      <a href="#">A link</a>
+      <a href="#">Another link</a>
+      <a href="#">Connexion</a>
+    </>
+  </Header>
+)
+export const Links = TemplateChildren.bind({})
+Links.args = { ...Baseline.args }

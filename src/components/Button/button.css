@@ -1,7 +1,7 @@
 @font-face {
   font-weight: 400;
   font-style: normal;
-  font-family: "Marianne Regular";
+  font-family: "Marianne";
   src:
     url('/fonts/Marianne/Marianne-Regular.woff') format('woff'),
     url('/fonts/Marianne/Marianne-Regular.woff2') format('woff2');
@@ -86,7 +86,7 @@
   line-height: 1;
   position: relative;
   margin-left: 0.50rem;
-  font-family: "Marianne Regular";
+  font-family: "Marianne";
 }
 
 .storybook-button-label--small {
