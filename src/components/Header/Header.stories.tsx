@@ -7,9 +7,6 @@ import Header, { HeaderProps } from "./Header"
 export default {
   component: Header,
   title: "Components/Header",
-  // argTypes: {
-  //   backgroundColor: { control: 'color' },
-  // },
 } as Meta
 
 const Template: Story<HeaderProps> = (args) => <Header {...args} />
