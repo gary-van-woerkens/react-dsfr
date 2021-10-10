@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.6...v1.2.7) (2021-10-10)
+
+
+### Bug Fixes
+
+* Use PAT within release workflow ([7d90d48](https://github.com/gary-van-woerkens/react-dsfr/commit/7d90d48f8864ce98b1237776a2e3c67639d0deb2))
+
 ## [1.2.6](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.5...v1.2.6) (2021-10-10)
 
 
