@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.5...v1.2.6) (2021-10-10)
+
+
+### Bug Fixes
+
+* Add gh-pages deployment workflow ([040d794](https://github.com/gary-van-woerkens/react-dsfr/commit/040d79457d318989d9211e4f3a4e6266770dca5c))
+
 ## [1.2.5](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.4...v1.2.5) (2021-10-10)
 
 
