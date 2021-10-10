@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.7...v1.2.8) (2021-10-10)
+
+
+### Bug Fixes
+
+* Do not persist creds when releasing ([095007e](https://github.com/gary-van-woerkens/react-dsfr/commit/095007e5d0605ecdb4d427f86e502e0ee920e93d))
+
 ## [1.2.7](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.6...v1.2.7) (2021-10-10)
 
 
