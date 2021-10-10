@@ -1,0 +1,38 @@
+name: GH Pages
+
+on:
+  push:
+    tags:
+      - v*
+
+concurrency:
+  group: gh-pages
+  cancel-in-progress: true
+
+jobs:
+
+  ##############################################################################
+  ## BUILD AND REGISTER BACKEND IMAGE
+  ##############################################################################
+  deploy:
+    name: Deploy Github Pages
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build library
+        run: yarn build-storybook
+
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          email: gary.van-woerkens@sg.social.gouv.fr
+          build_dir: storybook-static
+          branch: gh-pages
