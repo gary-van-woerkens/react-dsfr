@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.3...v1.2.4) (2021-10-10)
+
+
+### Bug Fixes
+
+* Add link component (without children) ([1bd7fec](https://github.com/gary-van-woerkens/react-dsfr/commit/1bd7fec67f93478fb9e7121726a9803d5d04a3df))
+
 ## [1.2.3](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.2...v1.2.3) (2021-10-09)
 
 
