@@ -1,0 +1,19 @@
+@function str-replace($stack, $needle, $content) {
+  $is:quote($stack);
+  $in:quote($needle);
+  $ic:quote($content);
+
+  $i:str-index($is, $in);
+
+  @while $i != null {
+    $is:unquote(str_slice($is, 1, $i - 1) + $ic + str_slice($is, $i + str-length($in), str_length($is)));
+    $i:str-index($is, $in);
+  }
+
+  @return unquote($is);
+}
+
+@function svg-encode($svg) {
+  $svg: str-replace($svg, '#', '%23');
+  @return 'data:image/svg+xml;utf-8,' + $svg;
+}

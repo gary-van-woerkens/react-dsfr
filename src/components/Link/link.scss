@@ -1,0 +1,84 @@
+@use "../../styles/utils";
+@use "../../styles/fonts";
+@use "../../styles/colors";
+
+.link {
+  color: inherit;
+  padding: 0 1px;
+  display: inline-block;
+  font-family: "Marianne";
+
+  &.action {
+    padding: 4px 8px;
+    color: colors.$blue-france-500;
+
+    &.small {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &.medium {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &.large {
+      font-size: 20px;
+      line-height: 32px;
+
+      i {
+        &::before {
+          top: 3px;
+        }
+      }
+    }
+
+    &.icon-left {
+      padding: 4px 12px 4px 8px;
+    }
+
+    &.icon-right {
+      padding: 4px 8px 4px 12px;
+    }
+
+    &.disabled {
+      color: #919191;
+      cursor: not-allowed;
+
+      &:hover {
+        background: none;
+      }
+
+      a {
+        pointer-events: none;
+      }
+    }
+
+    &:hover {
+      border-radius: 16px;
+      background: rgba(0, 0, 0, 0.04);
+      background-blend-mode: luminosity;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &:focus {
+    border: 1px solid #0A76F6;
+  }
+
+  i {
+    margin-left: 2px;
+
+    &::before {
+      top: 2px;
+      position: relative;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}

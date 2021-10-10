@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./button.css"
+import "./button.scss"
 
 export interface ButtonProps {
   label?: string
@@ -21,22 +21,16 @@ const Button = ({
   disabled = false,
   iconPosition = "left",
 }: ButtonProps): JSX.Element => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary"
+  const mode = primary ? "primary" : "secondary"
 
-  const buttonClasses = ["storybook-button", `storybook-button--${size}`, mode]
+  const buttonClasses = ["button", `${size}`, mode]
 
-  const labelClasses = [
-    "storybook-button-label",
-    `storybook-button-label--${size}`,
-  ]
+  const labelClasses = ["label", `${size}`]
 
   if (iconCls) buttonClasses.push(iconCls)
-  if (!label) buttonClasses.push("storybook-button--no-label")
-  if (disabled) buttonClasses.push("storybook-button--disabled")
-  if (iconPosition === "right")
-    buttonClasses.push("storybook-button--icon-right")
+  if (!label) buttonClasses.push("no-label")
+  if (disabled) buttonClasses.push("disabled")
+  if (iconPosition === "right") buttonClasses.push("icon-right")
 
   return (
     <button

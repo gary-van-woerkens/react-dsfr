@@ -1,0 +1,26 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Marianne";
+  src:
+    url('../../../public/fonts/Marianne/Marianne-Regular.woff') format('woff'),
+    url('../../../public/fonts/Marianne/Marianne-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: bold;
+  font-family: "Marianne";
+  src:
+    url('../../../public/fonts/Marianne/Marianne-Bold.woff') format('woff'),
+    url('../../../public/fonts/Marianne/Marianne-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Spectral";
+  src:
+    url('../../../public/fonts/Spectral/Spectral-Regular.woff') format('woff'),
+    url('../../../public/fonts/Spectral/Spectral-Regular.woff2') format('woff2');
+}
