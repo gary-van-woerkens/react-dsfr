@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.4...v1.2.5) (2021-10-10)
+
+
+### Bug Fixes
+
+* Add links to header component ([52086ef](https://github.com/gary-van-woerkens/react-dsfr/commit/52086efe99ac871b80ff871d4a4a740fc21d7ab6))
+
 ## [1.2.4](https://github.com/gary-van-woerkens/react-dsfr/compare/v1.2.3...v1.2.4) (2021-10-10)
 
 
