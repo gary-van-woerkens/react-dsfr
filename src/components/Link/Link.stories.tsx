@@ -32,6 +32,12 @@ Action.args = {
   text: "Label lien",
 }
 
+export const ActionDisabled = Template.bind({})
+ActionDisabled.args = {
+  ...Action.args,
+  disabled: true,
+}
+
 export const ActionIconLeft = Template.bind({})
 ActionIconLeft.args = {
   ...Action.args,
@@ -43,10 +49,4 @@ ActionIconRight.args = {
   ...Action.args,
   iconPosition: "right",
   iconCls: "ri-arrow-right-line",
-}
-
-export const ActionDisabled = Template.bind({})
-ActionDisabled.args = {
-  ...ActionIconRight.args,
-  disabled: true,
 }

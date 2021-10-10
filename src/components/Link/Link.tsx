@@ -5,13 +5,13 @@ import "./link.scss"
 export interface LinkProps {
   text: string
   href: string
-  action: boolean
+  action?: boolean
   iconCls?: string
   disabled?: boolean
   children?: JSX.Element
   iconPosition?: "left" | "right"
-  size: "small" | "medium" | "large"
-  target: "_self" | "_blank" | "_parent" | "_top"
+  size?: "small" | "medium" | "large"
+  target?: "_self" | "_blank" | "_parent" | "_top"
 }
 
 const Link = ({

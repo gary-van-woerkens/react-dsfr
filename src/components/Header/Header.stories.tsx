@@ -3,6 +3,7 @@ import { Story } from "@storybook/react"
 import { Meta } from "@storybook/react/types-6-0"
 
 import Header, { HeaderProps } from "./Header"
+import Link from "../Link"
 
 export default {
   component: Header,
@@ -20,9 +21,22 @@ Baseline.args = { ...Service.args, baseline: "The design system demo" }
 const TemplateChildren: Story<HeaderProps> = (args) => (
   <Header {...args}>
     <>
-      <a href="#">A link</a>
-      <a href="#">Another link</a>
-      <a href="#">Connexion</a>
+      <Link text="A link" href="#" action={true} size="small" />
+      <Link
+        href="#"
+        size="small"
+        action={true}
+        text="Another link"
+        iconCls="ri-home-2-line"
+      />
+      <Link
+        href="#"
+        size="small"
+        action={true}
+        text="Connexion"
+        iconPosition="right"
+        iconCls="ri-arrow-right-line"
+      />
     </>
   </Header>
 )
