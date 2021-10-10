@@ -5,6 +5,10 @@ on:
   push:
     branches: [master, alpha, beta, next]
 
+concurrency:
+  group: release
+  cancel-in-progress: true
+
 jobs:
   release:
     name: Release
@@ -13,6 +17,8 @@ jobs:
 
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        persist-credentials: false
 
     - name: Install dependencies
       run: yarn install

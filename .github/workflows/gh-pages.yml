@@ -1,6 +1,7 @@
 name: GH Pages
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - v*
@@ -10,10 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
-  ##############################################################################
-  ## BUILD AND REGISTER BACKEND IMAGE
-  ##############################################################################
   deploy:
     name: Deploy Github Pages
     runs-on: ubuntu-latest
